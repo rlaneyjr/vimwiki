@@ -1,0 +1,304 @@
+
+    {
+        "nodeName" : "dc3-sw1",
+        "ipv4" : "172.16.1.122",
+        "nodePort" : "22",
+        "nodeProtocol" : "ssh2",
+        "deviceType" : "SWITCH",
+        "manufacturer" : "Cisco",
+        "make" : "Cisco IOS",
+        "model" : "3750",
+        "operatingSystem" : "IOS",
+        "platform" : "IOS",
+        "authMethod" : "tacacs",
+        "loginPW" : "",
+        "enablePW" : "",
+        "adminStatus" : "PRODUCTION",
+        "operationStatus" : "MONITORED",
+        "lifecycleStatus" : "INSTALLED",
+        "layer2" : "1",
+        "layer3" : "1",
+        "layer4" : "1",
+        "assetID" : "0000012345",
+        "owningTeam" : "Network Core Infrastructure",
+        "owner" : "Hearst Enterprise Technology",
+        "site" : "VIRL Testing Site",
+        "location" : "dc3-lab01",
+        "deviceTags" : "neteng1",
+        "deviceNotes" : "Test Lab Inter-datacenter Connectivity",
+        "lastUpdate" : "2016-04-19 19:56:32.0"
+    },
+
+
+    'active' => 'true',
+    'businessService' => '',
+    'customer' => 'Hearst Newspapers',
+    'deviceType' => 'MPLS Router',
+    'group' => 'HNP SFC-901 Mission',
+    'host' => '10.30.12.4',
+    'location' => 'SFC-901 Mission',
+    'name' => '217-c2811-bgpr',
+    'netType' => 'wan',
+    'nodeStatus' => 1,
+    'notes' => '',
+    'pciSite' => '',
+    'roleType' => 'distribution',
+    'serviceLevel' => 'Gold',
+    'serviceStatus' => 'Development',
+    'service_management' => '',
+    'source' => 'Service Now',
+    'typeGroup' => 'Network Core Infrastructure',
+    'uuid' => 'de5d02092b61bd082ac31c1c17da154d',
+
+sysDescr
+###############################################################################
+nodeName            'name'
+ipv4                'host'
+nodePort
+nodeProtocol
+
+deviceType          'deviceType'
+operatingSystem
+make
+manufacturer
+vendor              'nodeVendor'
+model               'nodeModel'
+serialNumber        'serialNum'
+
+adminStatus         'active'
+uuid                'uuid'
+serviceLevel        'serviceLevel'
+source              'source'
+enablePW            'enablePW'
+owningTeam          'typeGroup'
+owner               'group'
+netType             'netType'
+roleType            'roleType'
+nodeStatus          'nodeStatus'
+serviceStatus
+deviceTags
+lastUpdate
+
+customer            'customer'
+site                'group'
+location            'location'
+room
+coordinate
+###############################################################################
+model_audit
+___________
+name
+host
+group
+version
+active
+collect
+last updated
+icmp working
+wmi working
+snmp working
+nodeModel
+nodeVendor
+nodeType
+roleType
+netType
+sysObjectID
+sysObjectName
+sysDescr
+intCount
+intCollect
+
+export_nodes
+____________
+Node
+uuid
+Host
+Group
+Business Service
+Service Status
+Services
+Network
+Role
+sysName
+Model
+Vendor
+SerialNumber
+Description
+
+###############################################################################
+  'bridgeport-vz-gw' => {
+    'active' => 'true',
+    'advanced_options' => undef,
+    'authkey' => '',
+    'authpassword' => '',
+    'authprotocol' => 'md5',
+    'businessService' => undef,
+    'calls' => 'false',
+    'cbqos' => 'none',
+    'collect' => 'true',
+    'community' => '0d71d56ae6',
+    'customer' => 'Hearst Newspapers',
+    'depend' => 'N/A',
+    'deviceType' => 'MPLS Router',
+    'extra_options' => undef,
+    'group' => 'HNP Connecticut Post-Bridgeport',
+    'host' => '167.173.204.2',
+    'location' => 'Connecticut Post-Bridgeport',
+    'max_msg_size' => '',
+    'max_repetitions' => '',
+    'model' => 'automatic',
+    'name' => 'bridgeport-vz-gw',
+    'netType' => 'wan',
+    'nodeStatus' => 1,
+    'notes' => '',
+    'pciSite' => '',
+    'ping' => 'true',
+    'port' => '161',
+    'privkey' => '',
+    'privpassword' => '',
+    'privprotocol' => 'des',
+    'rancid' => 'false',
+    'remote_connection_name' => '',
+    'remote_connection_url' => '',
+    'roleType' => 'distribution',
+    'serviceLevel' => 'Gold',
+    'serviceStatus' => 'Development',
+    'service_management' => undef,
+    'services' => undef,
+    'source' => 'Service Now',
+    'threshold' => 'true',
+    'timezone' => 0,
+    'typeGroup' => 'Network Core Infrastructure',
+    'username' => '',
+    'uuid' => 'e339dc542b5442402ac31c1c17da1564',
+    'version' => 'snmpv2c',
+    'webserver' => 'false'
+  },
+  'bristanetrtr01' => {
+    'active' => 'true',
+    'calls' => 'false',
+    'cbqos' => 'none',
+    'collect' => 'true',
+    'community' => '0d71d56ae6',
+    'customer' => 'Hearst Newspapers',
+    'depend' => 'N/A',
+    'deviceType' => 'Router',
+    'group' => 'HNP Connecticut Post-Bridgeport',
+    'host' => '10.220.0.98',
+    'location' => 'Connecticut Post-Bridgeport',
+    'model' => 'automatic',
+    'name' => 'bristanetrtr01',
+    'netType' => 'wan',
+    'nodeStatus' => 1,
+    'ping' => 'true',
+    'port' => '161',
+    'roleType' => 'access',
+    'serviceLevel' => 'Gold',
+    'services' => undef,
+    'source' => 'Service Now',
+    'threshold' => 'true',
+    'timezone' => 0,
+    'typeGroup' => 'Network Core Infrastructure',
+    'uuid' => 'caf82aaf2bcaf5001c40fcd019da1510',
+    'version' => 'snmpv2c',
+    'webserver' => 'false'
+  },
+
+class NetDevice(object):
+    """
+    An object that represents a distinct network device and its metadata.
+
+    Almost all of the attributes are populated by
+    `~trigger.netdevices._populate()` and are mostly dependent upon the source
+    data. This is prone to implementation problems and should be revisited in
+    the long-run as there are certain fields that are baked into the core
+    functionality of Trigger.
+
+    Users usually won't create these objects directly! Rely instead upon
+    `~trigger.netdevice.NetDevices` to do this for you.
+    """
+
+    def __init__(self, data=None, with_acls=None):
+        # Here comes all of the bare minimum set of attributes a NetDevice
+        # object needs for basic functionality within the existing suite.
+
+        # Hostname
+        self.nodeName = None
+        self.ipv4 = None
+        self.nodePort = None
+        self.nodeProtocol = None
+
+        # Hardware Info
+        self.deviceType = None
+        self.operatingSystem = None
+        self.make = None
+        self.manufacturer = settings.FALLBACK_MANUFACTURER
+        self.vendor = None
+        self.model = None
+        self.serialNumber = None
+
+        # Administrivia
+        self.adminStatus = settings.DEFAULT_ADMIN_STATUS
+        self.uuid = None
+        self.serviceLevel = None
+        self.source = None
+        self.enablePW = None
+        self.owningTeam = None
+        self.owner = None
+        self.netType = None
+        self.roleType = None
+        self.nodeStatus = None
+        self.serviceStatus = None
+        self.deviceTags = None
+        self.lastUpdate = None
+
+        # Location
+        self.customer = None
+        self.site = None
+        self.location = None
+        self.room = None
+        self.coordinate = None
+
+        # If `data` has been passed, use it to update our attributes
+        if data is not None:
+            self._populate_data(data)
+
+        # Set node remote port based on "hostname:port" as nodeName
+        self._set_node_port()
+
+        # Cleanup the attributes (strip whitespace, lowercase values, etc.)
+        self._cleanup_attributes()
+
+        # Map the manufacturer name to a Vendor object that has extra sauce
+        if self.manufacturer is not None:
+            self.vendor = vendor_factory(self.manufacturer)
+
+        # Use the vendor to populate the deviceType if it's not set already
+        if self.deviceType is None:
+            self._populate_deviceType()
+
+        # ACLs (defaults to empty sets)
+        self.explicit_acls = self.implicit_acls = self.acls = self.bulk_acls = set()
+        if with_acls:
+            log.msg('[%s] Populating ACLs' % self.nodeName)
+            self._populate_acls(aclsdb=with_acls)
+
+        # Bind the correct execute/connect methods based on deviceType
+        self._bind_dynamic_methods()
+
+        # Set the correct command(s) to run on startup based on deviceType
+        self.startup_commands = self._set_startup_commands()
+
+        # Assign the configuration commit commands (e.g. 'write memory')
+        self.commit_commands = self._set_commit_commands()
+
+        # Determine whether we require an async pty SSH channel
+        self.requires_async_pty = self._set_requires_async_pty()
+
+        # Set the correct line-ending per vendor
+        self.delimiter = self._set_delimiter()
+
+        # Set initial endpoint state
+        self.factories = {}
+        self._connected = False
+        self._endpoint = None

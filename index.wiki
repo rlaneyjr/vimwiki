@@ -7,7 +7,9 @@
 = My Wiki/ToDo List =
     * Fix [[file:~/cheaters/cheaters/PacketLife.html|PacketLife (html)]] stuff
     * Write [[trigger]] scripts and test
-    * Fix [[VIRL]] cluster
+    * Move .zsh/functions and coloborate/combine with ~/bin or seperate functions
+      source into env.  This will require dragging the aliases out that should be
+      functions.
 
 
 "Basic Markup
