@@ -5,12 +5,8 @@
     * [[VimWiki]] help
 
 = My Wiki/ToDo List =
-    * Fix [[file:~/cheaters/cheaters/PacketLife.html|PacketLife (html)]] stuff
-    * Write [[trigger]] scripts and test
-    * Move .zsh/functions and coloborate/combine with ~/bin or seperate functions
-      source into env.  This will require dragging the aliases out that should be
-      functions.
-
+    * Balance board for stand/sit desk.
+    * Fix ns2 to be ns1. DNS is broken bad!!
 
 "Basic Markup
 "==============================================================================
